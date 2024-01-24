@@ -48,8 +48,8 @@ export const MainNavbar: FC = (props) => {
     sx={{
       backgroundColor: 'transparent',
       boxShadow: 'none',
-      height: "102px", // Add a unit (e.g., px)
-      bgcolor: scrollPosition > 10 ? "secondary.main" : "transparent",
+      height: "116px", // Add a unit (e.g., px)
+      bgcolor: scrollPosition > 20 ? "secondary.main" : "transparent",
       // Explicitly cast backdropFilter value to string
       backdropFilter: scrollPosition > 10 ? "blur(60px)" as string : "none",
     }}
@@ -76,7 +76,7 @@ export const MainNavbar: FC = (props) => {
               onClick={handleOpenNavMenu}
               color="inherit"
             >
-              <MenuIcon />
+              <MenuIcon sx={{color:"#fff"}}/>
             </IconButton>
             <Menu
               id="menu-appbar"

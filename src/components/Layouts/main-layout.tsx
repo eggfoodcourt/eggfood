@@ -6,6 +6,7 @@ import  Footer  from '../Footer';
 import { MainNavbar } from './main-navBar';
 
 import { Box, Container } from '@mui/material';
+import { Floating } from '../floating/Floating';
 
 
 interface MainLayoutProps {
@@ -26,7 +27,9 @@ export const MainLayout: FC<MainLayoutProps> = ({ children }) => {
      <Box sx={{flexGrow:1}}/>
       {children}
       <Box sx={{flexGrow:1}}/>
-      <Box><Footer /></Box>
+      <Box>
+        <Floating/>
+        <Footer /></Box>
     </Box>
   );
 };

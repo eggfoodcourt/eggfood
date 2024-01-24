@@ -50,7 +50,7 @@ export const Products: FC = () => {
           alt={product.title}
         />
         <CardContent sx={{ backgroundColor: 'primary.main' }}>
-          <Typography gutterBottom variant="h5" component="div">
+          <Typography gutterBottom variant="h5" component="div" textAlign={"center"} sx={{color:"#000"}}>
             {product.title}
           </Typography>
         </CardContent>
@@ -69,7 +69,7 @@ export const Products: FC = () => {
           alt={product.title}
         />
         <CardContent sx={{ backgroundColor: 'primary.main' }}>
-          <Typography gutterBottom variant="h5" component="div">
+          <Typography gutterBottom variant="h5" component="div" textAlign={"center"} sx={{color:"#000"}}>
             {product.title}
           </Typography>
         </CardContent>

@@ -27,6 +27,7 @@ export const Hero: FC = () => {
     alignItems: 'center', 
   }}
 >
+  <Box >
 
 {/* <div style={{ display: 'flex', justifyContent: 'flex-start', alignItems: 'flex-end', position: 'relative' }}>
   <Image
@@ -58,7 +59,7 @@ export const Hero: FC = () => {
             justifyContent="center"
             alignItems={'center'}
           >
-            <Typography variant="h3" sx={{ mb: 2, fontWeight: 600 }}>
+            <Typography variant="h2" sx={{ mb: 2, fontWeight: 600 }}>
               {title}
             </Typography>
             
@@ -73,7 +74,7 @@ export const Hero: FC = () => {
       {/* Add your Image Grid here */}
     </Grid>
   </Container>
-</Box>
+</Box></Box>
 
     </>
   </>)}

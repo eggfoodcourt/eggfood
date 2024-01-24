@@ -21,19 +21,21 @@ let theme = createTheme({
     typography: {
         // fontFamily: ["Inter", "sans-serif"].join(","),
         h3: {
-          color:'#ffcc00' 
+          color: '#f5f5f5',
+          // color:'#ffcc00' 
         },
     
         h2: {
           color: "#f5f5f5",
         },
         h4: {
-            //color: "#ffcc00",
-            color: '#f5f5f5',
+            color: "#ffcc00",
+            // color: '#f5f5f5',
           fontWeight: 'bold',
           },
         h5: {
-          color: '#f5f5f5',
+          color: "#ffcc00",
+          // color: '#f5f5f5',
           fontWeight: 'bold',
         },
         h6: {
