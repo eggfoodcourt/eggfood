@@ -16,7 +16,7 @@ import type { FC } from 'react';
 import Image from 'next/image';
 import useScrollPosition from '../hooks/useScrollPosition';
 
-const pages = ['Products', 'Pricing', 'Blog'];
+const pages = ['Dining Options', ];
 // const settings = ['Profile', 'Account', 'Dashboard', 'Logout'];
 
 export const MainNavbar: FC = (props) => {
@@ -42,16 +42,18 @@ export const MainNavbar: FC = (props) => {
 
   return (
     <AppBar
-      position="fixed"
-      elevation={0}
-      sx={{
-        backgroundColor: 'transparent',
-        boxShadow: 'none',
-        height: "102px", // Add a unit (e.g., px)
-        bgcolor: scrollPosition > 10 ? "secondary.main" : "transparent",
-        backdropFilter: scrollPosition > 10 && "blur(60px)",
-      }}
-    >
+    {...props}
+    position="fixed"
+    elevation={0}
+    sx={{
+      backgroundColor: 'transparent',
+      boxShadow: 'none',
+      height: "102px", // Add a unit (e.g., px)
+      bgcolor: scrollPosition > 10 ? "secondary.main" : "transparent",
+      // Explicitly cast backdropFilter value to string
+      backdropFilter: scrollPosition > 10 ? "blur(60px)" as string : "none",
+    }}
+  >
 
       <Container maxWidth="xl">
         <Toolbar disableGutters>

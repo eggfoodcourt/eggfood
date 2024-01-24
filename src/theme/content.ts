@@ -20,18 +20,34 @@ export const hero = {
     Title2:"Follow-Us",
   }
  
-  export const productsimage = [
-    { title: 'Egg curry', image: '/bg-egg.jpg' },
-    { title: 'Egg curry', image: '/bg.jpg' },
-    { title: 'Egg curry', image: '/bg-egg.jpg' },
-    { title: 'Egg curry', image: '/bg.jpg' },
-    { title: 'Bread omelette', image: '/bg-egg.jpg' },
-    { title: 'Bread omelette', image: '/bg.jpg' },
-    { title: 'Bread omelette', image: '/bg-egg.jpg' },
-    { title: 'Bread omelette', image: '/bg.jpg' },
-  ];
-  export const productback={
+  export const productsimage ={ 
     back:"/back.jpg",
     back1 : "/back1.jpg",
-    eggs : "/eggs.jpg"
-  }
+      eggs : "/eggs.jpg",
+    eggvariety:[
+    { title: 'Bread omelete', image: '/omlette/bread.jpg' },
+    { title: 'Crab omelete', image: '/omlette/crab omelete.jpg' },
+    { title: 'Frrench omelete', image: '/omlette/french omelete.jpg' },
+    { title: 'Spanish omelete', image: '/omlette/spanish omelete.jpg' },
+    // { title: 'Spoon omelete', image: '/omlette/spoon omelete.jpg' },
+    // { title: 'Bread omelete', image: '/spanish omelete.jpg' },
+    // { title: 'Bread omelete', image: '/omlette/spanish omelete.jpg' },
+    // { title: 'Bread omelete', image: '/omlette/spanish omelete.jpg' },
+  ],
+  omletevariety:[
+    { title: 'Egg Salad', image: '/egg/egg salad.jpg' },
+    { title: 'Egg 65', image: '/egg/egg-65.jpg' },
+    // { title: 'Egg Burj', image: '/egg/egg-burj.jpg' },
+    // { title: 'Egg Salad', image: '/egg/egg-burj.jpg' },
+    // { title: 'Pepper Egg', image: '/egg/pepper egg.jpg' },
+    // { title: 'Masala Egg', image: '/egg/egg-burj2.jpg' },
+    { title: 'Egg Machurian', image: '/egg/Egg-Manchurian.jpg' },
+    { title: 'Egg Shakshuka', image: '/egg/egg-shakshuka.jpg' },
+  ],
+}
+
+  // export const productback={
+  //   back:"/back.jpg",
+  //   back1 : "/back1.jpg",
+  //   eggs : "/eggs.jpg"
+  // }
