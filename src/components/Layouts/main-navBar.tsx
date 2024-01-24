@@ -14,6 +14,7 @@ import MenuItem from '@mui/material/MenuItem';
 import AdbIcon from '@mui/icons-material/Adb';
 import type { FC } from 'react';
 import Image from 'next/image';
+import useScrollPosition from '../hooks/useScrollPosition';
 
 const pages = ['Products', 'Pricing', 'Blog'];
 // const settings = ['Profile', 'Account', 'Dashboard', 'Logout'];
@@ -21,6 +22,8 @@ const pages = ['Products', 'Pricing', 'Blog'];
 export const MainNavbar: FC = (props) => {
   const [anchorElNav, setAnchorElNav] = React.useState<null | HTMLElement>(null);
   const [anchorElUser, setAnchorElUser] = React.useState<null | HTMLElement>(null);
+
+  const scrollPosition = useScrollPosition();
 
   const handleOpenNavMenu = (event: React.MouseEvent<HTMLElement>) => {
     setAnchorElNav(event.currentTarget);
@@ -38,19 +41,30 @@ export const MainNavbar: FC = (props) => {
   };
 
   return (
-    <AppBar position="static">
+    <AppBar
+      position="fixed"
+      elevation={0}
+      sx={{
+        backgroundColor: 'transparent',
+        boxShadow: 'none',
+        height: "102px", // Add a unit (e.g., px)
+        bgcolor: scrollPosition > 10 ? "secondary.main" : "transparent",
+        backdropFilter: scrollPosition > 10 && "blur(60px)",
+      }}
+    >
+
       <Container maxWidth="xl">
         <Toolbar disableGutters>
-            <Box  sx={{ display: { xs: 'none', md: 'flex' }, mr: 1 }} >
-        <Image
-          src="/Artboard 2@4x.png"
-          alt="Logo"
-          width={100}
-          height={100}
-        />
-        </Box>
-       
-        <Box sx={{ flexGrow: 1, display: { xs: 'none', md: 'flex' } }}/> <Box sx={{ flexGrow: 1, display: { xs: 'none', md: 'flex' } }}/> <Box sx={{ flexGrow: 1, display: { xs: 'none', md: 'flex' } }}/>
+          <Box sx={{ display: { xs: 'none', md: 'flex' }, mr: 1 }} >
+            <Image
+              src="/Artboard 2@4x.png"
+              alt="Logo"
+              width={100}
+              height={100}
+            />
+          </Box>
+
+          <Box sx={{ flexGrow: 1, display: { xs: 'none', md: 'flex' } }} /> <Box sx={{ flexGrow: 1, display: { xs: 'none', md: 'flex' } }} /> <Box sx={{ flexGrow: 1, display: { xs: 'none', md: 'flex' } }} />
           <Box sx={{ flexGrow: 1, display: { xs: 'flex', md: 'none' } }}>
             <IconButton
               size="large"
@@ -87,15 +101,15 @@ export const MainNavbar: FC = (props) => {
               ))}
             </Menu>
           </Box>
-          <Box  sx={{ display: { xs: 'flex', md: 'none' }, mr: 2 }} >
-        <Image
-          src="/Artboard 2@4x.png"
-          alt="Logo"
-          width={100}
-          height={100}
-        />
-        </Box>
-                  {/* <Typography
+          <Box sx={{ display: { xs: 'flex', md: 'none' }, mr: 2 }} >
+            <Image
+              src="/Artboard 2@4x.png"
+              alt="Logo"
+              width={100}
+              height={100}
+            />
+          </Box>
+          {/* <Typography
             variant="h5"
             noWrap
             component="a"
@@ -125,7 +139,7 @@ export const MainNavbar: FC = (props) => {
             ))}
           </Box>
 
-       
+
         </Toolbar>
       </Container>
     </AppBar>

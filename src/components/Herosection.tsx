@@ -22,24 +22,25 @@ export const Hero: FC = () => {
     backgroundPosition: 'center',
     backgroundSize: 'cover',
     display: 'flex',
-    justifyContent: 'center', // Center-align horizontally
-    alignItems: 'center', // Center-align vertically
+    justifyContent: 'center',
+    textAlign:'left',
+    alignItems: 'center', 
   }}
 >
-<Image
-  src="/bg.jpg"
-//   layout="fill"
-width={500}
-height={500}
-alt="Picture of the author"
-  style={{
-    position: 'absolute',
-    bottom: '30',
-    left: '20',
-    width: '200px', // Set the width to your desired value
-    height: '200px', // Set the height to your desired value
-  }}
-/>
+
+{/* <div style={{ display: 'flex', justifyContent: 'flex-start', alignItems: 'flex-end', position: 'relative' }}>
+  <Image
+    src="/bg.jpg"
+    width={200}
+    height={200}
+    alt="Picture of the author"
+    style={{
+      width: '200px',
+      height: '200px',
+      borderRadius: '50%',
+    }}
+  />
+</div> */}
   <Container>
     <Grid container>
       <Grid item md={6} xs={12}>
@@ -47,12 +48,12 @@ alt="Picture of the author"
           sx={{
             width: '100%',
             height: '100%',
-            textAlign: 'center', // Center-align text content
+            textAlign: 'left', // Center-align text content
           }}
         >
           <Stack
             sx={{ height: '100%' }}
-            textAlign={'left'}
+            textAlign={'center'}
             display={'flex'}
             justifyContent="center"
             alignItems={'center'}
@@ -60,8 +61,9 @@ alt="Picture of the author"
             <Typography variant="h3" sx={{ mb: 2, fontWeight: 600 }}>
               {title}
             </Typography>
+            
             {/* <Typography variant="h4"  textAlign={'left'}>{title}</Typography> */}
-            <Typography variant="h5"  sx={{ mb: 1 }}>{subtitle}</Typography>
+            <Typography variant="h4"  sx={{ mb: 1 }}>{subtitle}</Typography>
             <Typography variant="h5" sx={{ mb: 6 }}>
               {subtitle2}
             </Typography>

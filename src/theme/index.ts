@@ -28,10 +28,16 @@ let theme = createTheme({
           color: "#f5f5f5",
         },
         h4: {
-            color: "#f5f5f5",
+            //color: "#ffcc00",
+            color: '#f5f5f5',
+          fontWeight: 'bold',
           },
         h5: {
-          color: '#ffcc00'
+          color: '#f5f5f5',
+          fontWeight: 'bold',
+        },
+        h6: {
+          color: '#f5f5f5'
         },
       },
 })
