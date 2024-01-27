@@ -46,6 +46,19 @@ export const hero = {
   ],
 }
 
+
+export const Openindayimage ={
+  eggs : "/eggs.jpg",
+  openingImage:[
+  {opening:"/img1.jpg",id:"1"},
+  {opening:"/img2.jpg",id:"2"},
+  {opening:"/img3.jpg",id:"3"},
+  {opening:"/img4.jpg",id:"4"},
+
+]
+  
+}
+
   // export const productback={
   //   back:"/back.jpg",
   //   back1 : "/back1.jpg",

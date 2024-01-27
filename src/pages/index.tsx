@@ -5,6 +5,9 @@ import styles from "@/styles/Home.module.css";
 import { Typography } from "@mui/material";
 import { Hero } from "@/components/Herosection";
 import { Products } from "@/components/Products";
+import { Openindayimage } from "@/theme/content";
+import Openingday from "@/components/openingday/openingDay";
+// import LeftToRightCards from "@/components/Card";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -19,7 +22,9 @@ export default function Home() {
       </Head>
       <main>
         <Hero />
+        <Openingday />
         <Products />
+        {/* <LeftToRightCards /> */}
       </main>
     </>
   );

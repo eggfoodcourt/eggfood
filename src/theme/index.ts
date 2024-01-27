@@ -3,25 +3,23 @@ import {  responsiveFontSizes } from "@mui/material/styles";
 
 
 let theme = createTheme({
+
     palette:{
-        // background: {
-        //     default: "#050517",
-        //   },
         primary : {
             main: '#ffcc00'
         },
         secondary : {
-            main : '#08203a'
+            main : '#130303'
         },
         background : {
-            default : '#f7f7f7'
-        }
+            default : '#2D080A'  
+        },
 
     },
     typography: {
         // fontFamily: ["Inter", "sans-serif"].join(","),
         h3: {
-          color: '#f5f5f5',
+          color: '#ffcc00',
           // color:'#ffcc00' 
         },
     

@@ -3,7 +3,7 @@ import { Box, Typography, Stack, Container, Hidden, useMediaQuery, useTheme, Gri
 import Image from 'next/image'
 import { hero } from '@/theme/content'
 
-const { MainBG1,MainBG, title, subtitle2, subtitle, guitter } = hero;
+const { MainBG1,MainBG,  subtitle2, subtitle, guitter } = hero;
 export const Hero: FC = () => {
 
   
@@ -59,13 +59,10 @@ export const Hero: FC = () => {
             justifyContent="center"
             alignItems={'center'}
           >
-            <Typography variant="h2" sx={{ mb: 2, fontWeight: 600 }}>
-              {title}
-            </Typography>
-            
+           
             {/* <Typography variant="h4"  textAlign={'left'}>{title}</Typography> */}
-            <Typography variant="h4"  sx={{ mb: 1 }}>{subtitle}</Typography>
-            <Typography variant="h5" sx={{ mb: 6 }}>
+            <Typography variant="h3"  sx={{ mb: 1 }}>{subtitle}</Typography>
+            <Typography variant="h4" sx={{ mb: 6 }}>
               {subtitle2}
             </Typography>
           </Stack>
