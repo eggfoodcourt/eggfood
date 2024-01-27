@@ -43,7 +43,7 @@ export const Openingday: FC = () => {
     //   </Box>
     <Box
     sx={{
-      minHeight: '100vh',
+      minHeight: '50vh',
       minWidth: '100%',
       mt: { md: '0', lg: '0', sm: '20' },
       backgroundPosition: 'center',
@@ -74,8 +74,6 @@ export const Openingday: FC = () => {
               </Card>
             </Grid>
           ))}
-          
-
         </Grid>
       </Container>
     </Box>
