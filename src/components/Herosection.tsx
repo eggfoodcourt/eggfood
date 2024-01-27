@@ -44,7 +44,7 @@ export const Hero: FC = () => {
 </div> */}
   <Container>
     <Grid container>
-      <Grid item md={6} xs={12}>
+      <Grid item md={3} xs={12}>
         <Box
           sx={{
             width: '100%',
@@ -54,15 +54,15 @@ export const Hero: FC = () => {
         >
           <Stack
             sx={{ height: '100%' }}
-            textAlign={'center'}
+            textAlign={'left'}
             display={'flex'}
             justifyContent="center"
             alignItems={'center'}
           >
            
             {/* <Typography variant="h4"  textAlign={'left'}>{title}</Typography> */}
-            <Typography variant="h3"  sx={{ mb: 1 }}>{subtitle}</Typography>
-            <Typography variant="h4" sx={{ mb: 6 }}>
+            <Typography variant="h2"  sx={{ mt:12,mb:6,color:'#fff'}}>{subtitle}</Typography>
+            <Typography variant="h5" sx={{ mb: 6 }}>
               {subtitle2}
             </Typography>
           </Stack>

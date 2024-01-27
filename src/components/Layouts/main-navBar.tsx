@@ -49,7 +49,7 @@ export const MainNavbar: FC = (props) => {
       backgroundColor: 'transparent',
       boxShadow: 'none',
       height: "116px", // Add a unit (e.g., px)
-      bgcolor: scrollPosition > 20 ? "secondary.main" : "transparent",
+      bgcolor: scrollPosition > 20 ? "background.default" : "transparent",
       // Explicitly cast backdropFilter value to string
       backdropFilter: scrollPosition > 10 ? "blur(60px)" as string : "none",
     }}

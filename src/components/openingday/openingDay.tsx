@@ -19,15 +19,15 @@ export const Openingday: FC = () => {
                 justifyContent: 'center',
                 textAlign: 'left',
                 alignItems: 'center',
-                backgroundColor: 'secondary.main',
+                backgroundColor: 'background.default',
                 py: 5,
             }}
         >
             <Box sx={{ backdropFilter: 'blur(20px)' }}>
                 <Grid container spacing={3}>
                     {openingImage.map((Opening: Opening, index: number) => (
-                        <Grid item key={index} xs={12} sm={6} md={4} lg={3}>
-                            <Card sx={{ maxWidth: 400, borderRadius: 8,mt:5, boxShadow: '0 0 40px 5px rgba(124, 54, 38, 0.8)' }}>
+                        <Grid item key={index} xs={12} sm={6} md={4} lg={3} spacing={6}>
+                            <Card sx={{ maxWidth: 400, borderRadius: 8,mt:5, boxShadow: '0 0 20px 1px rgba(251, 255, 254, 0.6)' }}>
                                 <CardActionArea>
                                     <CardMedia
                                         component="img"

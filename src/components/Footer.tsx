@@ -19,7 +19,7 @@ const { logo, title1, Title2, area, city, title3, content } = footersection
 const Footer: FC = () => {
   return (
     <Box sx={{
-      backgroundColor: 'secondary.main', color: '#F2F2F2', width: '100%', textAlign: 'center', py: 3, mt: 'auto'
+      backgroundColor: 'background.default', color: '#F2F2F2', width: '100%', textAlign: 'center', py: 3, mt: 'auto'
     }}>
       <Container maxWidth='xl'>
         <Grid container spacing={4}>

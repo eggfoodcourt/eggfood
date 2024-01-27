@@ -12,7 +12,7 @@ let theme = createTheme({
             main : '#130303'
         },
         background : {
-            default : '#2D080A'  
+            default : '#1B1B1E'  
         },
 
     },
