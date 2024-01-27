@@ -3,33 +3,33 @@ import { Box, Typography, Stack, Container, Hidden, useMediaQuery, useTheme, Gri
 import Image from 'next/image'
 import { hero } from '@/theme/content'
 
-const { MainBG1,MainBG,  subtitle2, subtitle, guitter } = hero;
+const { MainBG1, MainBG, subtitle2, subtitle, guitter } = hero;
 export const Hero: FC = () => {
 
-  
+
   const theme = useTheme();
   const isSmallScreen = useMediaQuery(theme.breakpoints.down("md"));
 
 
-  return (<>
-    <>
-    <Box
-  sx={{
-    minHeight: '100vh',
-    minWidth: '100%',
-    mt: { md: '0', lg: '0', sm: '20' },
-    backgroundImage: `url(${MainBG})`,
-    backgroundPosition: 'center',
-    backgroundSize: 'cover',
-    display: 'flex',
-    justifyContent: 'center',
-    textAlign:'left',
-    alignItems: 'center', 
-  }}
->
-  <Box >
+  return (
+  <>
+      <Box
+        sx={{
+          minHeight: '100vh',
+          minWidth: '100%',
+          mt: { md: '0', lg: '0', sm: '20' },
+          backgroundImage: `url(${MainBG})`,
+          backgroundPosition: 'center',
+          backgroundSize: 'cover',
+          display: 'flex',
+          justifyContent: 'flex-start',
+          textAlign: 'left',
+          alignItems: 'center',
+        }}
+      >
+        <Box >
 
-{/* <div style={{ display: 'flex', justifyContent: 'flex-start', alignItems: 'flex-end', position: 'relative' }}>
+          {/* <div style={{ display: 'flex', justifyContent: 'flex-start', alignItems: 'flex-end', position: 'relative' }}>
   <Image
     src="/bg.jpg"
     width={200}
@@ -42,36 +42,41 @@ export const Hero: FC = () => {
     }}
   />
 </div> */}
-  <Container>
-    <Grid container>
-      <Grid item md={3} xs={12}>
-        <Box
-          sx={{
-            width: '100%',
-            height: '100%',
-            textAlign: 'left', // Center-align text content
-          }}
-        >
-          <Stack
-            sx={{ height: '100%' }}
-            textAlign={'left'}
-            display={'flex'}
-            justifyContent="center"
-            alignItems={'center'}
-          >
-           
-            {/* <Typography variant="h4"  textAlign={'left'}>{title}</Typography> */}
-            <Typography variant="h2"  sx={{ mt:12,mb:6,color:'#fff'}}>{subtitle}</Typography>
-            <Typography variant="h5" sx={{ mb: 6 }}>
-              {subtitle2}
-            </Typography>
-          </Stack>
-        </Box>
-      </Grid>
-      {/* Add your Image Grid here */}
-    </Grid>
-  </Container>
-</Box></Box>
+          <Container maxWidth={'lg'}>
+            <Grid container>
+              <Grid item md={9} xs={12}>
+                <Box
+                  sx={{
+                    width: '100%',
+                    height: '100%',
+                    textAlign: 'center', // Center-align text content
+                  }}
+                >
+                  <Stack
+                    sx={{ height: '100%' }}
+                    textAlign={'center'}
+                    display={'flex'}
+                    justifyContent="center"
+                    alignItems={'center'}
 
-    </>
-  </>)}
+                  // justifyContent: 'flex-start', // Align items to the start (left) side
+                  // display: 'flex',
+                  // alignItems: 'center',
+                  >
+                    {/* <Typography variant="h4"  textAlign={'left'}>{title}</Typography> */}
+                    
+                    <Typography variant="h2" sx={{ mt: 12, mb: 6, color: '#fff' }}>{subtitle}</Typography>
+                    <Typography variant="h5" sx={{ mb: 6 }}>
+                      {subtitle2}
+                    </Typography>
+                  </Stack>
+                </Box>
+              </Grid>
+              {/* Add your Image Grid here */}
+            </Grid>
+          </Container>
+        </Box></Box>
+
+  
+  </>)
+}

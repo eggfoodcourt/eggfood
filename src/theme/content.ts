@@ -6,8 +6,9 @@ export const hero = {
     guitter:"/guitter.jpg",
     title:"Grand Opening on January 25, 2024",
     // title: "Welcome to the Egg Food Court, ",
-    subtitle:"Where every bite is a celebration of eggstraodinary flavors!",
-    subtitle2:"Indulge in a symphony of flavors with our exquisite egg-centric menu. ",
+    subtitle:"Egg Food Court",
+    // subtitle2:"Indulge in a symphony of flavors with our exquisite egg-centric menu. ",
+    subtitle2:"Where every bite is a celebration of eggstraodinary flavors!",
   };
 
   export const footersection= {
