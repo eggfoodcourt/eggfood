@@ -62,7 +62,7 @@ export const Openingday: FC = () => {
         <Grid container spacing={3}>
         {openingImage.map((Opening: Opening, index: number) => (
             <Grid item key={index} xs={12} sm={6} md={4} lg={3}>
-              <Card sx={{ maxWidth: 450, borderRadius: 5 , mt: 5, boxShadow: '0 0 20px 1px rgba(251, 255, 254, 0.6)'}}>
+              <Card sx={{ maxWidth: 450, borderRadius: 5 , boxShadow: '0 0 20px 1px rgba(251, 255, 254, 0.6)'}}>
                 <CardActionArea>
                   <CardMedia
                     component="img"
